@@ -4,39 +4,39 @@ function Write-Error {
   $messages = @{
     ru = @{
       logFile = @(
-        "РќРµ СѓРґР°С‘С‚СЃСЏ РЅР°Р№С‚Рё Р»РѕРі-С„Р°Р№Р» Genshin Impact!",
-        "РќРµ Р·Р°Р±СѓРґСЊС‚Рµ СЃРЅР°С‡Р°Р»Р° РѕС‚РєСЂС‹С‚СЊ РёСЃС‚РѕСЂРёСЋ РјРѕР»РёС‚РІ РІ РёРіСЂРµ.",
-        "Р•СЃР»Рё РІС‹ РїСЂРѕРґРѕР»Р¶Р°РµС‚Рµ СЃС‚Р°Р»РєРёРІР°С‚СЊСЃСЏ СЃ СЌС‚РѕР№ РїСЂРѕР±Р»РµРјРѕР№, РїРѕРїСЂРѕР±СѓР№С‚Рµ Р·Р°РїСѓСЃС‚РёС‚СЊ Powershell РѕС‚ РёРјРµРЅРё Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°."
+        "Не удаётся найти лог-файл Genshin Impact!",
+        "Не забудьте сначала открыть историю молитв в игре.",
+        "Если вы продолжаете сталкиваться с этой проблемой, попробуйте запустить Powershell от имени администратора."
       )
       urlNotFound = @(
-        "РР·РІРёРЅРёС‚Рµ, РЅРµ СѓРґР°С‘С‚СЃСЏ РЅР°Р№С‚Рё РЅСѓР¶РЅСѓСЋ СЃСЃС‹Р»РєСѓ РІ Р»РѕРі-С„Р°Р№Р»Рµ.",
-        "РќРµ Р·Р°Р±СѓРґСЊС‚Рµ СЃРЅР°С‡Р°Р»Р° РѕС‚РєСЂС‹С‚СЊ РёСЃС‚РѕСЂРёСЋ РјРѕР»РёС‚РІ РІ РёРіСЂРµ.",
-        "Р•СЃР»Рё РІС‹ РїСЂРѕРґРѕР»Р¶Р°РµС‚Рµ СЃС‚Р°Р»РєРёРІР°С‚СЊСЃСЏ СЃ СЌС‚РѕР№ РїСЂРѕР±Р»РµРјРѕР№, РїРѕРїСЂРѕР±СѓР№С‚Рµ Р·Р°РїСѓСЃС‚РёС‚СЊ Powershell РѕС‚ РёРјРµРЅРё Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°."
+        "Извините, не удаётся найти нужную ссылку в лог-файле.",
+        "Не забудьте сначала открыть историю молитв в игре.",
+        "Если вы продолжаете сталкиваться с этой проблемой, попробуйте запустить Powershell от имени администратора."
       )
       unathorized = @(
-        "РќРµРІРµСЂРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РєСѓРєРё 'remember-me'"
+        "Неверное значение куки 'remember-me'"
       )
       wrongUrl = @(
-        "РќРµРґРµР№СЃС‚РІРёС‚РµР»СЊРЅР°СЏ СЃСЃС‹Р»РєР° РІ Р»РѕРі-С„Р°Р№Р»Рµ.",
-        "РћС‚РєСЂРѕР№С‚Рµ РёСЃС‚РѕСЂРёСЋ РјРѕР»РёС‚РІ РІ РёРіСЂРµ Рё РїРѕРїСЂРѕР±СѓР№С‚Рµ СЃРЅРѕРІР°."
+        "Недействительная ссылка в лог-файле.",
+        "Откройте историю молитв в игре и попробуйте снова."
       )
       differentUid = @(
-        "Р’С‹ РїС‹С‚Р°РµС‚РµСЃСЊ РёРјРїРѕСЂС‚РёСЂРѕРІР°С‚СЊ РјРѕР»РёС‚РІС‹ РёР· РґСЂСѓРіРѕРіРѕ Р°РєРєР°СѓРЅС‚Р°!"
+        "Вы пытаетесь импортировать молитвы из другого аккаунта!"
       )
       mihoyoUnreachable = @(
-        "РќРµ СѓРґР°С‘С‚СЃСЏ РїРѕРґРєР»СЋС‡РёС‚СЊСЃСЏ Рє СЃРµСЂРІРµСЂСѓ Genshin Impact.",
-        "РџРѕРІС‚РѕСЂРёС‚Рµ РїРѕРїС‹С‚РєСѓ РїРѕР·Р¶Рµ."
+        "Не удаётся подключиться к серверу Genshin Impact.",
+        "Повторите попытку позже."
       )
       newWishesDuringImport = @(
-        "РР·РІРёРЅРёС‚Рµ, РІР°С€Р° РёСЃС‚РѕСЂРёСЏ РјРѕР»РёС‚РІ РёР·РјРµРЅРёР»Р°СЃСЊ РІРѕ РІСЂРµРјСЏ РёРјРїРѕСЂС‚Р°.",
-        "РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РїРѕРїСЂРѕР±СѓР№С‚Рµ СЃРЅРѕРІР°."
+        "Извините, ваша история молитв изменилась во время импорта.",
+        "Пожалуйста, попробуйте снова."
       )
       alreadyImporting = @(
-        "РРјРїРѕСЂС‚ РІР°С€РёС… РјРѕР»РёС‚РІ РІ РїСЂРѕС†РµСЃСЃРµ, Р±СѓРґСЊС‚Рµ С‚РµСЂРїРµР»РёРІС‹!"
+        "Импорт ваших молитв в процессе, будьте терпеливы!"
       )
       unknownServerError = @(
-        "РЎРµСЂРІРµСЂ РІРµСЂРЅСѓР» РѕС€РёР±РєСѓ!",
-        "РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РїРѕРїСЂРѕР±СѓР№С‚Рµ СЃРЅРѕРІР°."
+        "Сервер вернул ошибку!",
+        "Пожалуйста, попробуйте снова."
       )
     }
     en = {
@@ -135,7 +135,7 @@ function Handle-Error {
 
 function Enter-To-Exit {
   if ($LANG -eq "ru") {
-    Read-Host "РќР°Р¶РјРёС‚Рµ Enter С‡С‚РѕР±С‹ РІС‹Р№С‚Рё..."
+    Read-Host "Нажмите Enter чтобы выйти..."
   } else {
     Read-Host "Press Enter to exit..."
   }
@@ -178,7 +178,7 @@ function Get-Link {
     return
   }
 
-  return $match[$match.count-1]
+  return $match[$match.count-1] -replace 'OnGetWebViewPageFinish:', ''
 }
 
 function Parse-Link {
@@ -205,18 +205,34 @@ function Parse-Link {
 }
 
 function Parse-Response {
-  param([Microsoft.PowerShell.Commands.WebResponseObject]$Response)
+  param(
+    [parameter(Mandatory, ParameterSetName="WithResponse", Position=0)][Microsoft.PowerShell.Commands.WebResponseObject]$Response,
+    [parameter(Mandatory, ParameterSetName="WithBaseResponse", Position=0)][System.Net.HttpWebResponse]$BaseResponse
+  )
 
-  switch ($Response.StatusCode) {
+  if ($Response) {
+    $statusCode = $Response.StatusCode
+    $content = $Response.Content
+  } else {
+    $statusCode = [int]$BaseResponse.StatusCode
+
+    $stream = $BaseResponse.GetResponseStream()
+    $reader = New-Object System.IO.StreamReader($stream)
+    $reader.BaseStream.Position = 0
+    $reader.DiscardBufferedData()
+    $content = $reader.ReadToEnd()
+  }
+
+  switch ($statusCode) {
     200 {
-      return ($Response.content | ConvertFrom-Json)
+      return ($content | ConvertFrom-Json)
     }
     401 {
       Handle-Error "unathorized"
       return $False
     }
     500 {
-      $data = $Response.content | ConvertFrom-Json
+      $data = $content | ConvertFrom-Json
       Handle-Error "serverError" $data
       return $False
     }
@@ -232,26 +248,40 @@ function Request-Import {
     [Hashtable]$AuthParams
   )
 
-  $response = Invoke-WebRequest -WebSession $Session -SkipHttpErrorCheck `
-    -Uri "https://genshin-wishes.com/api/wishes/import?authkey=$($AuthParams.authkey)&game_biz=$($AuthParams.game_biz)"
+  $response = try {
+    Invoke-WebRequest -WebSession $Session `
+      -Uri "https://genshin-wishes.com/api/wishes/import?authkey=$($AuthParams.authkey)&game_biz=$($AuthParams.game_biz)"
+  } catch {
+    $_.Exception.Response
+  }
+
   return (Parse-Response $response)
 }
 
 function Request-Import-State {
   param([Microsoft.PowerShell.Commands.WebRequestSession]$Session)
 
-  $response = Invoke-WebRequest -WebSession $Session -SkipHttpErrorCheck `
-    -Uri "https://genshin-wishes.com/api/wishes/importState"
+  $response = try {
+    Invoke-WebRequest -WebSession $Session -Uri "https://genshin-wishes.com/api/wishes/importState"
+  } catch {
+    $_.Exception.Response
+  }
+
   return (Parse-Response $response)
 }
 
 function Request-Import-Finish {
   param([Microsoft.PowerShell.Commands.WebRequestSession]$Session)
 
-  $response = Invoke-WebRequest -WebSession $Session -Method Delete -SkipHttpErrorCheck `
-    -Uri "https://genshin-wishes.com/api/wishes/importState" -Headers @{
-      "x-xsrf-token" = ($Session.Cookies.GetAllCookies() | where Name -eq "XSRF-TOKEN").value
-    }
+  $response = try {
+    Invoke-WebRequest -WebSession $Session -Method Delete -Uri "https://genshin-wishes.com/api/wishes/importState" `
+      -Headers @{
+        "x-xsrf-token" = ($Session.Cookies.GetCookies("https://genshin-wishes.com") | where Name -eq "XSRF-TOKEN").value
+      }
+  } catch {
+    $_.Exception.Response
+  }
+
   return (Parse-Response $response)
 }
 
@@ -260,11 +290,11 @@ function Print-Import-Result {
 
   $translation = @{
     ru = @{
-      message = "РРјРїРѕСЂС‚РёСЂРѕРІР°РЅРѕ РЅРѕРІС‹С… РјРѕР»РёС‚РІ:"
-      WEAPON_EVENT = "РњРѕР»РёС‚РІС‹ СЃРѕР±С‹С‚РёСЏ РѕСЂСѓР¶РёСЏ"
-      CHARACTER_EVENT = "РњРѕР»РёС‚РІС‹ СЃРѕР±С‹С‚РёСЏ РїРµСЂСЃРѕРЅР°Р¶Р°"
-      PERMANENT = "РЎС‚Р°РЅРґР°СЂС‚РЅС‹Рµ РјРѕР»РёС‚РІС‹"
-      NOVICE = "РњРѕР»РёС‚РІС‹ РЅРѕРІРёС‡РєР°"
+      message = "Импортировано новых молитв:"
+      WEAPON_EVENT = "Молитвы события оружия"
+      CHARACTER_EVENT = "Молитвы события персонажа"
+      PERMANENT = "Стандартные молитвы"
+      NOVICE = "Молитвы новичка"
     }
     en = @{
       message = "New wishes imported:"
@@ -325,7 +355,7 @@ function Get-Remember-Me-Cookie {
   }
 
   $cookie = if ($LANG -eq "ru") {
-    Read-Host "Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ РєСѓРєРё 'remember-me' СЃ СЃР°Р№С‚Р° https://genshin-wishes.com"
+    Read-Host "Введите значение куки 'remember-me' с сайта https://genshin-wishes.com"
   } else {
     Read-Host "Please enter the 'remember-me' cookie value from https://genshin-wishes.com site"
   }
@@ -347,5 +377,6 @@ function Import {
   Enter-To-Exit
 }
 
+Add-Type -AssemblyName System.Web
 if ((Get-Culture).Name -eq "ru-RU") { $LANG = "ru" } else { $LANG = "en" }
 Import
